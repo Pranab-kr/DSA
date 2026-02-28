@@ -5,13 +5,12 @@ int main() {
 
   char c;
 
-  cout<<"Enter ur character - ";
-  cin>>c;
+  cout << "Enter ur character - ";
+  cin >> c;
 
   if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
-    cout<<"vowl"<<endl;
+    cout << "vowl" << endl;
 
   else
-    cout<<"Consonent"<<endl;
-
+    cout << "Consonent" << endl;
 }
