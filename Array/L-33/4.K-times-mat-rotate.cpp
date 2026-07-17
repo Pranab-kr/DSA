@@ -13,8 +13,8 @@ int main() {
 
   k %= 4;
 
-  int row = 3, col = 3;
-
+  int row = mat.size();
+  int col = mat[0].size();
   for (int t = 0; t < k; t++) {
     // transpose matrix
     for (int i = 0; i < row; i++) {
