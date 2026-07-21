@@ -1,7 +1,7 @@
 // 1859. Sorting the Sentence
 // https://leetcode.com/problems/sorting-the-sentence/
 //
-// TC -> O(n), SC -> O(1)
+// TC -> O(n), SC -> O(n)
 
 class Solution {
 public:
