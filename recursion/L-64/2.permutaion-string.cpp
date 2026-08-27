@@ -42,3 +42,38 @@ public:
     return ans;
   }
 };
+
+// swap Method
+class Solution {
+public:
+  void findPer(string &s, vector<string> &ans, int idx) {
+    if (idx == s.size()) {
+      ans.push_back(s);
+      return;
+    }
+
+    vector<bool> used(26, false);
+
+    for (int i = idx; i < s.size(); i++) {
+
+      // Have we already chosen this character
+      // for position idx?
+      if (used[s[i] - 'A'])
+        continue;
+
+      used[s[i] - 'A'] = true;
+
+      swap(s[i], s[idx]);
+      findPer(s, ans, idx + 1);
+      swap(s[i], s[idx]);
+    }
+  }
+
+  vector<string> findPermutation(string &s) {
+    vector<string> ans;
+
+    findPer(s, ans, 0);
+
+    return ans;
+  }
+};

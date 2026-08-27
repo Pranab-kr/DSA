@@ -8,6 +8,12 @@ int findSum(int arr[], int idx, int n, int sum) {
   if (idx == n)
     return sum == 0;
 
+  // both base case work for non zero sum
+  // if (sum == 0)
+  //   return 1;
+  // if (idx == n || sum < 0)
+  //   return sum == 0;
+
   // if we take don't take the ele we increase the idx for next idx ele check,
   // if we take ele don't increase the ele cause we want to use that ele again
   // to find is sum is possible.
