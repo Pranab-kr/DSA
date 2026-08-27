@@ -11,16 +11,15 @@ public:
       return;
     }
 
+    vector<bool> dupChk(26, false);
+
     for (int i = 0; i < s.size(); i++) {
-
-      if (used[i])
-        continue;
-
-      // Skip duplicate choices at this level
-      if (i > 0 && s[i] == s[i - 1] && !used[i - 1])
+      // Skip duplicate and used choices at this level
+      if (dupChk[s[i] - 'A'] || used[i])
         continue;
 
       used[i] = true;
+      dupChk[s[i] - 'A'] = true;
       tmp.push_back(s[i]);
 
       findPer(s, ans, tmp, used);
