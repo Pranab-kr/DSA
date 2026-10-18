@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-// void f1(int *ptr) // copy of pointer
-// {
-//   ptr = ptr + 1; // only local copy changes
-// }
-//
-// void f2(int **ptr) // pointer to pointer
-// {
-//   *ptr = *ptr + 1; // original pointer changes
-// }
+void f1(int *ptr) // copy of pointer
+{
+  ptr = ptr + 1; // only local copy changes
+}
+
+void f2(int **ptr) // pointer to pointer
+{
+  *ptr = *ptr + 1; // original pointer changes
+}
 
 void f3(int *&ptr) // reference to pointer
 {
@@ -25,6 +25,8 @@ int main() {
   int ***p2 = &p1; // tripple pointer
 
   cout << p << endl;
+  f1(p); // change the address of pointer
+  // f2(&p); // change the address of pointer
   // f3(p); // change the address of pointer
 
   cout << p << endl;
@@ -35,8 +37,8 @@ int main() {
   cout << n << endl;
 
   // address check
-  cout << &p1 << endl;
-  cout << p2 << endl;
+  // cout << &p1 << endl;
+  // cout << p2 << endl;
 
   return 0;
 }

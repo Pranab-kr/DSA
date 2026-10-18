@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
   float *p1 = new float;
   cout << p1 << endl;
   *p1 = 10.12; // val assign
-  cout << *p1;
+  cout << *p1 << endl;
 
   // arr allocation in heep
   int n;
