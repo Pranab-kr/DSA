@@ -43,7 +43,7 @@ public:
     ListNode *head1 = head;
     ListNode *head2 = prev; // new head after reverse
 
-    while (head1 && head2) {
+    while (head1) {
       if (head1->val != head2->val)
         return false;
 
