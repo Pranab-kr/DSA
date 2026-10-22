@@ -11,7 +11,8 @@ public:
     Node *curr = head;
     Node *prev = NULL;
     int count = 1;
-    while (curr != NULL) {
+
+    while (curr != NULL) { // check if the LL exist
       if (count == K) {
         prev->next = curr->next;
         delete curr;

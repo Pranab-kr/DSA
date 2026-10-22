@@ -54,10 +54,11 @@ int main(int argc, char *argv[]) {
       }
     } else {
       Node *curr = head;
+
       while (--pos)
         curr = curr->next;
 
-      if (curr->next == NULL) {
+      if (curr->next == NULL) { // last pos
         curr->prev->next = NULL;
         delete curr;
       } else {

@@ -15,6 +15,7 @@ public:
 
     curr = head;
     count -= n;
+
     if (count == 0) { // edge case handle when 1st ele need to remove
       ListNode *temp = head;
       head = head->next;

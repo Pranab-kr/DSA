@@ -82,3 +82,37 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
+
+// PRACTICE: HW
+// Insertion in a Doubly Linked List
+// https://www.geeksforgeeks.org/problems/insert-a-node-in-doubly-linked-list/1
+
+// / Time Complexity: O(n)
+// Auxiliary Space: O(1)
+
+// Constraints:
+// 1 ≤ size of linked list ≤ 104
+// 0 ≤ node.data, x ≤ 104
+// 0 ≤ p < head.size()
+
+class Solution {
+public:
+  Node *insertAtPos(Node *head, int p, int x) {
+    // code here
+    Node *curr = head;
+
+    while (p--) {
+      curr = curr->next;
+    }
+    Node *temp = new Node(x);
+    temp->prev = curr;
+    temp->next = curr->next;
+
+    if (curr->next != NULL)    // check before update if its the last pos or not
+      curr->next->prev = temp; // it's not last pos so update
+
+    curr->next = temp; // update curr next so point to newNode
+
+    return head;
+  }
+};
