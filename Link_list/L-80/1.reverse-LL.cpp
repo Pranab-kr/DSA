@@ -1,7 +1,9 @@
 // 206. Reverse Linked List
 // https://leetcode.com/problems/reverse-linked-list/description/
 
-// soft revers(only val not next address)
+// METHOD 1: soft reverse (only values, not next address)
+// Time Complexity: O(n)
+// Auxiliary Space: O(n)  // extra vector
 // class Solution {
 // public:
 //     ListNode* reverseList(ListNode* head) {
@@ -24,7 +26,9 @@
 //     }
 // };
 
-// full reverse(with next address)
+// METHOD 2: full reverse (with next address)
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
 // class Solution {
 // public:
 //   ListNode *reverseList(ListNode *head) {
@@ -44,7 +48,9 @@
 //   }
 // };
 
-// using recsion
+// METHOD 3: using recursion
+// Time Complexity: O(n)
+// Auxiliary Space: O(n)  // recursion stack
 class Solution {
 public:
   ListNode *revLL(ListNode *curr, ListNode *prev) {

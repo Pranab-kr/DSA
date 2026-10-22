@@ -22,6 +22,8 @@ Node *createLL(int arr[], int idx, int size) {
   return temp;
 }
 
+// Time Complexity: O(n)  // for the deletion step
+// Auxiliary Space: O(n)  // recursion stack for createLL
 int main(int argc, char *argv[]) {
   int arr[4] = {1, 2, 3, 4};
   Node *Head = NULL;
@@ -82,6 +84,9 @@ int main(int argc, char *argv[]) {
 //     }
 // };
 // */
+// METHOD 1: iterative
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
 // class Solution {
 //   public:
 //     Node* deleteNode(Node* head, int x) {
@@ -111,8 +116,9 @@ int main(int argc, char *argv[]) {
 //         return head;
 //     }
 // };
-// METHOD 2:
-// using recursion
+// METHOD 2: using recursion
+// Time Complexity: O(n)
+// Auxiliary Space: O(n)  // recursion stack
 // class Solution {
 //   public:
 //     Node* deleteNode(Node* curr, int x) {

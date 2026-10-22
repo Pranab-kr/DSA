@@ -1,6 +1,9 @@
 // 61. Rotate List
 // https://leetcode.com/problems/rotate-list/description/
 
+// SOLUTION 1: pointer manipulation
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
 class Solution {
 public:
   ListNode *rotateRight(ListNode *head, int k) {
@@ -49,6 +52,8 @@ public:
 };
 
 // SOLUTION 2: using a extra arr and swiping the elements
+// Time Complexity: O(n)
+// Auxiliary Space: O(n)  // extra vector
 class Solution {
 public:
   ListNode *rotateRight(ListNode *head, int k) {

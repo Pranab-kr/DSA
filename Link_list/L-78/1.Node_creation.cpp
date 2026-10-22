@@ -1,3 +1,6 @@
+// Time Complexity: O(1)
+// Auxiliary Space: O(1)
+
 #include <iostream>
 using namespace std;
 

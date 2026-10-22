@@ -2,6 +2,8 @@
 // https://leetcode.com/problems/palindrome-linked-list/description/
 
 // METHOD 1: using prev and curr
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
 class Solution {
 public:
   bool isPalindrome(ListNode *head) {
@@ -56,6 +58,8 @@ public:
 };
 
 // MINE
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
 class Solution {
 public:
   bool isPalindrome(ListNode *head) {
@@ -111,6 +115,8 @@ public:
 };
 
 // METHOD 2: using a extra vector
+// Time Complexity: O(n)
+// Auxiliary Space: O(n)  // extra vector
 class Solution {
 public:
   bool isPalindrome(ListNode *head) {

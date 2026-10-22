@@ -1,6 +1,9 @@
 // Remove Every k'th in Linked List
 // https://www.geeksforgeeks.org/problems/remove-every-kth-node/1
 
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
+
 class Solution {
 public:
   Node *deleteK(Node *head, int K) {

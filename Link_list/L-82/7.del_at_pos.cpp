@@ -1,3 +1,6 @@
+// Time Complexity: O(n)
+// Auxiliary Space: O(n)  // recursion stack for createLL
+
 #include <iostream>
 using namespace std;
 

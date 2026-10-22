@@ -1,3 +1,6 @@
+// Time Complexity: O(n)  // building the list
+// Auxiliary Space: O(1)
+
 #include <iostream>
 using namespace std;
 

@@ -11,6 +11,9 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+// METHOD 1: count the nodes, then move to the middle
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
 // class Solution {
 // public:
 //   ListNode *middleNode(ListNode *head) {
@@ -31,7 +34,9 @@
 //   }
 // };
 
-// NOTE: using fast and slow pointer
+// METHOD 2: using fast and slow pointer
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
 class Solution {
 public:
   ListNode *middleNode(ListNode *head) {

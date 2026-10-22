@@ -13,6 +13,8 @@ public:
   }
 };
 
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)
 int main(int argc, char *argv[]) {
   int arr[5] = {1, 2, 3, 4, 5};
   int pos = 2;
@@ -87,7 +89,7 @@ int main(int argc, char *argv[]) {
 // Insertion in a Doubly Linked List
 // https://www.geeksforgeeks.org/problems/insert-a-node-in-doubly-linked-list/1
 
-// / Time Complexity: O(n)
+// Time Complexity: O(n)
 // Auxiliary Space: O(1)
 
 // Constraints:

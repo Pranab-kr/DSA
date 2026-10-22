@@ -1,3 +1,6 @@
+// Time Complexity: O(1)  // for the deletion step (building the list takes O(n))
+// Auxiliary Space: O(1)
+
 #include <iostream>
 using namespace std;
 

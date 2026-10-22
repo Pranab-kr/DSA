@@ -1,3 +1,6 @@
+// Time Complexity: O(n)
+// Auxiliary Space: O(n)  // recursion stack
+
 #include <iostream>
 using namespace std;
 
