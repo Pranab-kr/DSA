@@ -32,7 +32,7 @@ public:
         head2 = head2->next;
       }
 
-      tail->next = NULL;
+      tail->next = NULL; // redandent can be removed works fine without it
     }
 
     // if some node exist then connect them to tail's next
