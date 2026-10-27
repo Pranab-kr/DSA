@@ -1,7 +1,7 @@
 // Merge K Sorted Linked Lists
 // https://www.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1
 
-// TC -> O(nklogk) , SC -> O(N)
+// TC -> O(nklogk) , SC -> O(logk)
 // using mergeSort approch to merge
 class Solution {
 public:
