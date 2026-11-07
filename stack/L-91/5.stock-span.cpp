@@ -2,7 +2,7 @@
 // https://www.geeksforgeeks.org/problems/stock-span-problem-1587115621/1
 // Time Complexity: O(n)
 // Auxiliary Space: O(n)
-//
+
 class Solution {
 public:
   vector<int> calculateSpan(vector<int> &arr) {
