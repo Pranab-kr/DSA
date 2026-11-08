@@ -1,5 +1,8 @@
 // Next Smaller Element
 // https://www.naukri.com/code360/problems/next-smaller-element_1112581?leftPanelTabValue=SUBMISSION
+// TC = O(n)
+// SC = O(n)
+
 #include <stack>
 #include <vector>
 
