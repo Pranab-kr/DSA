@@ -10,7 +10,7 @@ class Solution {
         stack<int> st;
         int n = mat.size();
         
-        for(int i = 0 ; i < n ; i++)
+        for(int i = n-1 ; i >= 0 ; i--)
             st.push(i);
             
         while(st.size() > 1){
